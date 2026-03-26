@@ -1,5 +1,51 @@
 # Changelog
 
+## [2.55.0](https://github.com/ashwin47/compound-engineering-plugin/compare/cli-v2.54.0...cli-v2.55.0) (2026-03-26)
+
+
+### Features
+
+* add `ce:review-beta` with structured persona pipeline ([#348](https://github.com/ashwin47/compound-engineering-plugin/issues/348)) ([e932276](https://github.com/ashwin47/compound-engineering-plugin/commit/e9322768664e194521894fe770b87c7dabbb8a22))
+* add consolidation support and overlap detection to `ce:compound` and `ce:compound-refresh` skills ([#372](https://github.com/ashwin47/compound-engineering-plugin/issues/372)) ([fe27f85](https://github.com/ashwin47/compound-engineering-plugin/commit/fe27f85810268a8e713ef2c921f0aec1baf771d7))
+* add execution mode toggle and context pressure bounds to parallel skills ([#336](https://github.com/ashwin47/compound-engineering-plugin/issues/336)) ([216d6df](https://github.com/ashwin47/compound-engineering-plugin/commit/216d6dfb2c9320c3354f8c9f30e831fca74865cd))
+* add git commit and branch helper skills ([#378](https://github.com/ashwin47/compound-engineering-plugin/issues/378)) ([fe08af2](https://github.com/ashwin47/compound-engineering-plugin/commit/fe08af2b417b707b6d3192a954af7ff2ab0fe667))
+* add new `onboarding` skill to create onboarding guide for repo ([#384](https://github.com/ashwin47/compound-engineering-plugin/issues/384)) ([27b9831](https://github.com/ashwin47/compound-engineering-plugin/commit/27b9831084d69c4c8cf13d0a45c901268420de59))
+* add optional high-level technical design to plan-beta skills ([#322](https://github.com/ashwin47/compound-engineering-plugin/issues/322)) ([3ba4935](https://github.com/ashwin47/compound-engineering-plugin/commit/3ba4935926b05586da488119f215057164d97489))
+* **ce-work:** add Codex delegation mode ([#328](https://github.com/ashwin47/compound-engineering-plugin/issues/328)) ([341c379](https://github.com/ashwin47/compound-engineering-plugin/commit/341c37916861c8bf413244de72f83b93b506575f))
+* edit resolve_todos_parallel skill for complete todo lifecycle ([#292](https://github.com/ashwin47/compound-engineering-plugin/issues/292)) ([88c89bc](https://github.com/ashwin47/compound-engineering-plugin/commit/88c89bc204c928d2f36e2d1f117d16c998ecd096))
+* fix skill transformation pipeline across all targets ([#334](https://github.com/ashwin47/compound-engineering-plugin/issues/334)) ([4087e1d](https://github.com/ashwin47/compound-engineering-plugin/commit/4087e1df82138f462a64542831224e2718afafa7))
+* **git-worktree:** auto-trust mise and direnv configs in new worktrees ([#312](https://github.com/ashwin47/compound-engineering-plugin/issues/312)) ([cfbfb67](https://github.com/ashwin47/compound-engineering-plugin/commit/cfbfb6710a846419cc07ad17d9dbb5b5a065801c))
+* improve `feature-video` skill with GitHub native video upload ([#344](https://github.com/ashwin47/compound-engineering-plugin/issues/344)) ([4aa50e1](https://github.com/ashwin47/compound-engineering-plugin/commit/4aa50e1bada07e90f36282accb3cd81134e706cd))
+* improve `repo-research-analyst` by adding a structured technology scan ([#327](https://github.com/ashwin47/compound-engineering-plugin/issues/327)) ([1c28d03](https://github.com/ashwin47/compound-engineering-plugin/commit/1c28d0321401ad50a51989f5e6293d773ac1a477))
+* improve `resolve-pr-feedback` skill ([#379](https://github.com/ashwin47/compound-engineering-plugin/issues/379)) ([2ba4f3f](https://github.com/ashwin47/compound-engineering-plugin/commit/2ba4f3fd58d4e57dfc6c314c2992c18ba1fb164b))
+* improve commit-push-pr skill with net-result focus and badging ([#380](https://github.com/ashwin47/compound-engineering-plugin/issues/380)) ([efa798c](https://github.com/ashwin47/compound-engineering-plugin/commit/efa798c52cb9d62e9ef32283227a8df68278ff3a))
+* improve reproduce-bug skill, sync agent-browser, clean up redundant skills ([#333](https://github.com/ashwin47/compound-engineering-plugin/issues/333)) ([affba1a](https://github.com/ashwin47/compound-engineering-plugin/commit/affba1a6a0d9320b529d429ad06fd5a3b5200bd8))
+* integrate claude code auto memory as supplementary data source for ce:compound and ce:compound-refresh ([#311](https://github.com/ashwin47/compound-engineering-plugin/issues/311)) ([5c1452d](https://github.com/ashwin47/compound-engineering-plugin/commit/5c1452d4cc80b623754dd6fe09c2e5b6ae86e72e))
+* integrate orphaned stack-specific reviewers into ce:review ([#375](https://github.com/ashwin47/compound-engineering-plugin/issues/375)) ([ce9016f](https://github.com/ashwin47/compound-engineering-plugin/commit/ce9016fac5fde9a52753cf94a4903088f05aeece))
+* make skills platform-agnostic across coding agents ([#330](https://github.com/ashwin47/compound-engineering-plugin/issues/330)) ([52df90a](https://github.com/ashwin47/compound-engineering-plugin/commit/52df90a16688ee023bbdb203969adcc45d7d2ba2))
+* minimal config for conductor support ([#373](https://github.com/ashwin47/compound-engineering-plugin/issues/373)) ([aad31ad](https://github.com/ashwin47/compound-engineering-plugin/commit/aad31adcd3d528581e8b00e78943b21fbe2c47e8))
+* optimize `ce:compound` speed and effectiveness ([#370](https://github.com/ashwin47/compound-engineering-plugin/issues/370)) ([4e3af07](https://github.com/ashwin47/compound-engineering-plugin/commit/4e3af079623ae678b9a79fab5d1726d78f242ec2))
+* **plugin:** add execution posture signaling to ce:plan-beta and ce:work ([#309](https://github.com/ashwin47/compound-engineering-plugin/issues/309)) ([748f72a](https://github.com/ashwin47/compound-engineering-plugin/commit/748f72a57f713893af03a4d8ed69c2311f492dbd))
+* promote `ce:review-beta` to stable `ce:review` ([#371](https://github.com/ashwin47/compound-engineering-plugin/issues/371)) ([7c5ff44](https://github.com/ashwin47/compound-engineering-plugin/commit/7c5ff445e3065fd13e00bcd57041f6c35b36f90b))
+* promote ce:plan-beta and deepen-plan-beta to stable ([#355](https://github.com/ashwin47/compound-engineering-plugin/issues/355)) ([169996a](https://github.com/ashwin47/compound-engineering-plugin/commit/169996a75e98a29db9e07b87b0911cc80270f732))
+* rationalize todo skill names and optimize skills ([#368](https://github.com/ashwin47/compound-engineering-plugin/issues/368)) ([2612ed6](https://github.com/ashwin47/compound-engineering-plugin/commit/2612ed6b3d86364c74dc024e4ce35dde63fefbf6))
+* redesign `document-review` skill with persona-based review ([#359](https://github.com/ashwin47/compound-engineering-plugin/issues/359)) ([18d22af](https://github.com/ashwin47/compound-engineering-plugin/commit/18d22afde2ae08a50c94efe7493775bc97d9a45a))
+* replace manual review agent config with ce:review delegation ([#381](https://github.com/ashwin47/compound-engineering-plugin/issues/381)) ([fed9fd6](https://github.com/ashwin47/compound-engineering-plugin/commit/fed9fd68db283c64ec11293f88a8ad7a6373e2fe))
+* rewrite `frontend-design` skill with layered architecture and visual verification ([#343](https://github.com/ashwin47/compound-engineering-plugin/issues/343)) ([423e692](https://github.com/ashwin47/compound-engineering-plugin/commit/423e69272619e9e3c14750f5219cbf38684b6c96))
+
+
+### Bug Fixes
+
+* add cursor-marketplace as release-please component ([#315](https://github.com/ashwin47/compound-engineering-plugin/issues/315)) ([838aeb7](https://github.com/ashwin47/compound-engineering-plugin/commit/838aeb79d069b57a80d15ff61d83913919b81aef))
+* add default-branch guard to commit skills ([#386](https://github.com/ashwin47/compound-engineering-plugin/issues/386)) ([31f07c0](https://github.com/ashwin47/compound-engineering-plugin/commit/31f07c00473e9d8bd6d447cf04081c0a9631e34a))
+* **ci:** add npm registry auth to release publish job ([#319](https://github.com/ashwin47/compound-engineering-plugin/issues/319)) ([3361a38](https://github.com/ashwin47/compound-engineering-plugin/commit/3361a38108991237de51050283e781be847c6bd3))
+* gitignore .context/ directory for Conductor ([#331](https://github.com/ashwin47/compound-engineering-plugin/issues/331)) ([0f6448d](https://github.com/ashwin47/compound-engineering-plugin/commit/0f6448d81cbc47e66004b4ecb8fb835f75aeffe2))
+* guard CONTEXTUAL_RISK_FLAGS lookup against prototype pollution ([#377](https://github.com/ashwin47/compound-engineering-plugin/issues/377)) ([8ebc77b](https://github.com/ashwin47/compound-engineering-plugin/commit/8ebc77b8e6c71e5bef40fcded9131c4457a387d7))
+* one-step codex installs by preferring bundled plugins ([#383](https://github.com/ashwin47/compound-engineering-plugin/issues/383)) ([f819e43](https://github.com/ashwin47/compound-engineering-plugin/commit/f819e435a54f5d7df558df5a6bee1e616a5da837))
+* quote frontend-design skill description ([#353](https://github.com/ashwin47/compound-engineering-plugin/issues/353)) ([86342db](https://github.com/ashwin47/compound-engineering-plugin/commit/86342db36c0d09b65afe11241e095dda2ad2cdb0))
+* scope commit-push-pr descriptions to full branch diff ([#385](https://github.com/ashwin47/compound-engineering-plugin/issues/385)) ([355e739](https://github.com/ashwin47/compound-engineering-plugin/commit/355e7392b21a28c8725f87a8f9c473a86543ce4a))
+* **skills:** update ralph-wiggum references to ralph-loop in lfg/slfg ([#324](https://github.com/ashwin47/compound-engineering-plugin/issues/324)) ([ac756a2](https://github.com/ashwin47/compound-engineering-plugin/commit/ac756a267c5e3d5e4ceb2f99939dbb93491ac4d2))
+
 ## [2.54.0](https://github.com/EveryInc/compound-engineering-plugin/compare/cli-v2.53.0...cli-v2.54.0) (2026-03-26)
 
 
